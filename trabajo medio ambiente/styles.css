@@ -1,0 +1,51 @@
+/* Estilos generales para todas las pantallas */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f8;
+}
+
+h1 {
+    color: #560276;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #9024f5; /* Cambia el color de fondo del menú */
+    color: #cedef6; /* Cambia el color del texto de los enlaces */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #cedef6; /* Cambia el color del texto de los enlaces */
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px; /* Ajusta el espaciado entre elementos del menú */
+}
+
+/* Estilos específicos para pantallas pequeñas (por ejemplo, teléfonos) */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+
+    nav {
+        padding: 5px 0; /* Reducir el relleno del menú para pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Reducir el espaciado entre elementos del menú para pantallas pequeñas */
+    }
+}
+

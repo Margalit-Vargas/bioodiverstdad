@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="C:\Users\marga\OneDrive\Documentos\trabajo medio ambiente\styles.css"> <!-- Enlace a tu archivo CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Carga jQuery -->
+    <script>
+        $(document).ready(function(){
+            // Efecto de desplazamiento suave al hacer clic en los enlaces del menú
+            $('nav a').click(function(){
+                var href = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 'slow');
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li><a href="biodiversidad.html">¿Qué es la biodiversidad?</a></li>
+            <li><a href="importancia.html">Importancia de la biodiversidad</a></li>
+            <li><a href="consecuencias.html">¿Qué sucede si se pierde la biodiversidad?</a></li>
+            <li><a href="amenazas.html">Amenazas</a></li>
+            <li><a href="prevencion.html">¿Cómo podemos conservar la biodiversidad?</a></li> 
+            <li><a href="acciones.html">Acciones individuales y colectivas para conservarla</a></li> <!-- Nuevo enlace a página 6 -->
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <h1>LA CONSERVACIÓN DE LA BIODIVERSIDAD</h1>
+        <p>Menú Principal</p>
+
+        <section id="formulario">
+            <h2>Formulario</h2>
+            <form id="contact-form" action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <img src="C:\Users\marga\menu2.jpeg" alt="menu2">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sitio web Conservación de la biodiversidad</p>
+    </footer>
+</body>
+</html>
